@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  
+
   <!-- Cargar la fuente de google Karla -->
-  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 
   <!-- Descomentar para cargar Tailwind CSS -->
-  <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
   <style type="text/tailwindcss">
     /* Revisa la documentación de Tailwind. Aquí puedes añadir más colores personalizados y también el tipo de font family https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme */
     @theme {
       --color-primary-cyan: hsl(179, 62%, 43%);
       --color-primary-bright-yellow: hsl(71, 73%, 54%);
+      --color-primary-light-gray: hsl(204, 43%, 93%);
+      --color-primary-grayish-blue: hsl(218, 22%, 67%);
+      --color-primary-cyan-light: hsl(179, 47%, 51%);
+    
+      
     }
   </style>
 
 </head>
-<body>
-  <div>
-    <div>
-      <h1 class="text-primary-cyan">Join our community</h1>
-      <div class="text-primary-bright-yellow">30-day, hassle-free money back guarantee</div>
-      <div>
+
+<body class="bg-primary-light-gray max-w-[375px]">
+  <div class="m-8 mt-[100px] m-w-[200px] ">
+    <div class="bg-white p-8 rounded-t-lg">
+      <h1 class="text-primary-cyan font-bold mb-[1.5rem]">Join our community</h1>
+      <div class="text-primary-bright-yellow mb-[1rem]">30-day, hassle-free money back guarantee</div>
+      <div class="text-gray-500">
         Gain access to our full library of tutorials along with expert code reviews.
         Perfect for any developers who are serious about honing their skills.
       </div>
     </div>
-    <div>
-      <h2>Monthly Subscription</h2>
-      <div><span>&dollar;29</span> <span>per month</span></div>
-      <div>Full access for less than &dollar;1 a day</div>
-      <div><a href="">Sign Up</a></div>
+    <div class="bg-primary-cyan p-8">
+      <h2 class="text-white font-semibold mb-[1rem]">Monthly Subscription</h2>
+      <div class="text-white relative mb-2"><span class="text-3xl font-semibold">&dollar;29</span> <span class="text-center absolute bottom-[6px] left-[60px] text-gray-500">per month</span></div>
+      <div class="text-primary-light-gray">Full access for less than &dollar;1 a day</div>
+      <div class="bg-primary-bright-yellow"><a href="">Sign Up</a></div>
     </div>
-    <div>
+    <div class="bg-primary-cyan-light p-8 rounded-b-lg">
       <h2>Why Us</h2>
       <ul>
         <li>Tutorials by industry experts</li>
@@ -52,4 +60,5 @@
     </div>
   </div>
 </body>
+
 </html>
